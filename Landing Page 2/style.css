@@ -189,6 +189,8 @@
   display: flex;
   position: relative;
   height: auto;
+  width: 80%;
+  justify-self: center;
   margin-top: 70px;
   text-align: center;
   padding: 10px;
@@ -280,17 +282,15 @@
 /* Responsive container */
 .android-compact .overlap-2 {
   position: relative;
+  justify-items: right;
   width: 100%;
-  max-width: 412px;
   margin: 0 auto;
-  padding: 1rem;
   text-align: center;
 }
 
 /* Responsive image */
 .overlap-2 img {
   display: block;
-  margin: 20px auto;
   width: 100%;
   max-width: 350px;
   height: auto;
@@ -302,16 +302,18 @@
   font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
+  right: 235px;
+  top: 50px;
   color: #333;
   margin-bottom: 1rem;
 }
 
 /* Continue button */
 #continue-button {
-  position: absolute;
-  top: 120px;
-  left: 35px;
+  position: relative;
   z-index: 10;
+  right: 250px; 
+  top: 40px;
   cursor: pointer;
   background-color: #a88d1e;
   color: white;
@@ -418,10 +420,8 @@
 }
 
 .android-compact .text-wrapper-10 {
-  position: absolute;
+  position: relative;
   width: 155px;
-  top: 70px;
-  left: 22px;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   color: #5a3825;
@@ -452,12 +452,14 @@
 
 .rectangle-voucher .image-wrapper {
   position: relative;
-  width: 100%;
+  width: 90%;
+  justify-self: center;
   overflow: hidden;
 }
 
 .rectangle-voucher .image-wrapper img {
   width: 100%;
+  justify-self: center;
   height: auto;
   object-fit: cover;
 }
