@@ -1,20 +1,3 @@
-// === Dropdown Bahasa & Flag ===
-const languageDropdown = document.getElementById("language-dropdown");
-const flagIcon = document.getElementById("flag-icon");
-
-const flagMap = {
-  en: "../Assets/flag-eng.svg",
-  id: "../Assets/flag-id.svg",
-  ar: "../Assets/flag-ar.svg"
-};
-
-languageDropdown?.addEventListener("change", function () {
-  const selectedLang = this.value;
-  if (flagMap[selectedLang]) {
-    flagIcon.src = flagMap[selectedLang];
-  }
-});
-
 // === Manual Scroll per 3 cards ===
 const categories = document.querySelector(".categories");
 const card = document.querySelector(".categories-card");
@@ -84,5 +67,11 @@ document.addEventListener("DOMContentLoaded", function() {
     // Arahkan ke signup.html
     window.location.href = "signup.html";
   });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const yearSpan = document.getElementById("year");
+  const currentYear = new Date().getFullYear();
+  yearSpan.textContent = currentYear;
 });
 

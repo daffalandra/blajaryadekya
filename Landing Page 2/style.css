@@ -1,13 +1,15 @@
 .android-compact {
   position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   width: 100%;
   max-width: 100%;
   margin: auto;
-  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
   z-index: 0;
+  height: 100%;
 }
 .android-compact .overlap-group-wrapper {
   max-width: 100%;
@@ -20,6 +22,7 @@
   justify-content: space-between;
   scrollbar-width: none;
   align-items: center;
+  flex: 1;
 }
 
 .Header {
@@ -36,7 +39,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  left: 92px;
+  left: 70px;
   margin-top: 30px;
   margin-bottom: 5px;
   position: relative;
@@ -234,16 +237,15 @@
   display: inline-block;
   padding: 0.5rem 1rem;
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  background-color: #a88d1e;
+  font-weight: 300;
+  background-color: transparent;
   border: 1.5px solid black;
-  color: white;
+  color: black;
   margin-top: 10px;
   border-radius: 8px;
-  font-size: 10px;
+  font-size: 12px;
   cursor: pointer;
   text-decoration: none;
-  font-size: 0.9rem;
   transition: background-color 0.3s ease;
 }
 
@@ -292,7 +294,7 @@
 .overlap-2 img {
   display: block;
   width: 100%;
-  max-width: 350px;
+  max-width: 450px;
   height: auto;
   object-fit: cover;
 }
@@ -328,7 +330,7 @@
 }
 
 #continue-button:hover {
-  background-color: #3730a3;
+  background-color: #816c1b;
 }
 
 /* Mobile-first: adjust for smaller screens */
@@ -484,15 +486,14 @@
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   width: 80%;
-  color: #ffffff; /* match text-wrapper-5 color */
-  font-size: 1,6vw; /* smaller than 6vw */
+  color: #ffffff; 
+  font-size: 1,6vw; 
   text-align: center;
   line-height: 1.4;
   padding: 0 5%;
   z-index: 1;
 }
 
-/* Optional tweaks for tablets and larger screens */
 @media (min-width: 600px) {
   .rectangle-voucher .text-wrapper-5 {
     font-size: 2rem;
@@ -504,3 +505,34 @@
     padding: 0 15%;
   }
 }
+
+.footer {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 12px;
+  color: #777;
+  background-color: #fff;
+  padding: 10px 0;
+  margin-top: 40px;
+  border-top: 1px solid #ddd;
+}
+
+.hz-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #a88d1e; /* hanya border hitam */
+  color: #a88d1e;            /* warna teks */
+  font-size: 10px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  margin-right: 6px;
+}
+
+
+
+
