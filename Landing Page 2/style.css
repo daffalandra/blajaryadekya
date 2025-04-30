@@ -290,10 +290,10 @@
 /* Responsive container */
 .android-compact .overlap-2 {
   position: relative;
-  justify-items: right;
+  justify-items: center;
   width: 100%;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
 }
 
 /* Responsive image */
@@ -308,10 +308,10 @@
 /* "Check Our Latest Updates!" text */
 .text-wrapper-10 {
   font-family: "Poppins", sans-serif;
-  font-size: 1.5rem;
+  font-size: 50px;
   font-weight: 600;
   right: 235px;
-  top: 50px;
+  top: 150px;
   color: #333;
   margin-bottom: 1rem;
 }
@@ -321,7 +321,7 @@
   position: relative;
   z-index: 10;
   right: 250px;
-  top: 40px;
+  top: 130px;
   cursor: pointer;
   background-color: #a88d1e;
   color: white;

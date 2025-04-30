@@ -75,3 +75,15 @@ document.addEventListener("DOMContentLoaded", function () {
   yearSpan.textContent = currentYear;
 });
 
+function togglePassword() {
+  const passwordInput = document.getElementById("password");
+  passwordInput.type =
+    passwordInput.type === "password" ? "text" : "password";
+}
+
+document
+  .querySelector(".google-btn")
+  .addEventListener("click", function () {
+    window.location.href = "https://google.com";
+  });
+
