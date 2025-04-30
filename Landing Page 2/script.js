@@ -3,7 +3,7 @@ const categories = document.querySelector(".categories");
 const card = document.querySelector(".categories-card");
 const cards = document.querySelectorAll(".categories-card");
 
-const itemsPerPage = 3;
+const itemsPerPage = 2;
 const totalCards = cards.length;
 const totalPages = Math.ceil(totalCards / itemsPerPage);
 
@@ -11,7 +11,7 @@ const indicatorBar = document.getElementById("indicator-bar");
 
 // Buat indikator halaman
 indicatorBar.innerHTML = "";
-for (let i = 0; i < totalPages; i++) {
+for (let i = 0; i < totalPages-1; i++) {
   const dot = document.createElement("div");
   dot.classList.add("indicator");
   if (i === 0) dot.classList.add("active");
